@@ -20,17 +20,15 @@ When your payment gateway fails, your business stops. ZextaPay monitors your Woo
 * **Live Dashboard:** See all successful and failed transactions in one place.
 * **Revenue at Risk:** See exactly how much money is at risk from failed payments.
 * **Error Intelligence:** Human-readable error descriptions — no confusing error codes.
-* **Transaction History:** 7 days of transaction history.
+* **Full Transaction History:** All transactions are stored and accessible.
 * **Gateway Health:** Monitor your payment gateway success rate.
 
 = STARTER (Premium) =
 * Real-time Slack and Telegram alerts on failure.
-* 30-day transaction history.
 
 = GROWTH (Premium) =
 * Automatic gateway failover — switches to backup gateway on failure.
 * Auto-restore when primary gateway comes back online.
-* 90-day transaction history.
 
 == Installation ==
 
@@ -63,19 +61,20 @@ No. Install, activate and your transactions will start being monitored automatic
 == Changelog ==
 
 = 1.0.1 =
+* Removed log retention limit — all transaction logs are now kept permanently.
+* Fixed Plugin URI.
 * Improved security and caching logic.
-* Prefix fixes for WordPress.org compliance.
 
 = 1.0.0 =
 * Initial release.
 * Live dashboard with transaction monitoring.
 * Revenue at risk tracking.
-* 7-day transaction history.
+* Full transaction history.
 
 == Upgrade Notice ==
 
 = 1.0.1 =
-Initial release. Install and protect your store today.
+Important update. Install to keep all transaction logs permanently.
 
 == External Services ==
 
@@ -88,4 +87,4 @@ Premium versions (Starter and Growth) are available via Freemius and connect to 
 == Source Code ==
 
 The unminified source code for the build tools and React dashboard (build/index.js) is available at:
-https://github.com/sohail-exe/zextapay-payment-monitor
+https://github.com/sultan1515/zextapay-payment-monitor
