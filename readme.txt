@@ -87,4 +87,4 @@ Premium versions (Starter and Growth) are available via Freemius and connect to 
 == Source Code ==
 
 The unminified source code for the build tools and React dashboard (build/index.js) is available at:
-https://github.com/sultan1515/zextapay-payment-monitor
+https://github.com/sohail-exe/zextapay-payment-monitor
