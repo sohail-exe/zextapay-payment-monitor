@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: ZextaPay Payment Monitor for WooCommerce
- * Plugin URI: https://zextapay.com
+ * Plugin URI: https://github.com/sohail-exe/zextapay-payment-monitor
  * Description: Real-time payment gateway monitor for WooCommerce.
  * Version: 1.0.1
  * Author: sultan1515
