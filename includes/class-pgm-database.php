@@ -102,16 +102,6 @@ class ZextaPay_Database {
     }
 
     public static function prune_logs() {
-        global $wpdb;
-
-        $days = 7; // Free version — 7 days only
-
-        $wpdb->query( $wpdb->prepare( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.SchemaChange
-            "DELETE FROM {$wpdb->prefix}zextapay_transaction_logs WHERE created_at < DATE_SUB(NOW(), INTERVAL %d DAY)",
-            $days
-        ) );
-
-        wp_cache_delete( 'zextapay_dashboard_stats', 'transient' );
-        wp_cache_delete( 'zextapay_recent_logs', 'transient' );
+        // All logs are kept in the free version.
     }
 }
