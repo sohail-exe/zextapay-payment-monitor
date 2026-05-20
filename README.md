@@ -7,14 +7,14 @@ Monitor your WooCommerce payment gateways in real-time. See failed transactions,
 - Live dashboard with successful and failed transactions
 - Revenue at risk tracking
 - Human-readable error descriptions
-- 7-day transaction history
+- Full transaction history — all logs kept permanently
 
 ## Premium Features
 
 Premium versions are available via Freemius:
 
-- **Starter** — Real-time Slack and Telegram alerts, 30-day history
-- **Growth** — Automatic gateway failover, auto-restore, 90-day history
+- **Starter** — Real-time Slack and Telegram alerts
+- **Growth** — Automatic gateway failover, auto-restore
 
 ## Installation
 
