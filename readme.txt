@@ -1,6 +1,6 @@
 === ZextaPay Payment Monitor for WooCommerce ===
 Contributors: sultan1515
-Tags: woocommerce, payment, stripe, monitoring, gateway
+Tags: stripe error, failed payment, woocommerce checkout, payment logs, lost revenue
 Requires at least: 6.0
 Tested up to: 6.9
 Stable tag: 1.0.1
@@ -8,55 +8,74 @@ Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Monitor WooCommerce payment gateways in real-time. See failed transactions, track revenue at risk and keep your store healthy.
+Stop losing sales to silent WooCommerce payment failures. Monitor every gateway in real-time, see revenue at risk, and get alerted the moment something breaks.
 
 == Description ==
 
-**ZextaPay Payment Monitor for WooCommerce**
+**Most WooCommerce stores only find out a payment gateway is broken when sales mysteriously drop — or an angry customer complains. By then, the damage is already done.**
 
-When your payment gateway fails, your business stops. ZextaPay monitors your WooCommerce payment gateways and shows you exactly what is happening in real-time.
+ZextaPay monitors every transaction across your WooCommerce payment gateways in real-time and shows you exactly what is happening at checkout — failed payments, revenue at risk, and plain-English error explanations — before a silent outage costs you a day's revenue.
 
-= FREE Features =
-* **Live Dashboard:** See all successful and failed transactions in one place.
-* **Revenue at Risk:** See exactly how much money is at risk from failed payments.
-* **Error Intelligence:** Human-readable error descriptions — no confusing error codes.
-* **Full Transaction History:** All transactions are stored and accessible.
-* **Gateway Health:** Monitor your payment gateway success rate.
+No technical knowledge needed. Install, activate, and your transactions start being monitored automatically. Zero impact on checkout speed.
 
-= STARTER (Premium) =
-* Real-time Slack and Telegram alerts on failure.
+**Learn more at [zextapay.com](https://zextapay.com/)**
 
-= GROWTH (Premium) =
-* Automatic gateway failover — switches to backup gateway on failure.
-* Auto-restore when primary gateway comes back online.
+= Free Features =
+
+* **Live Transaction Dashboard** — See every successful and failed payment the moment it happens, across Stripe, PayPal, Square, Authorize.net and any WooCommerce-compatible gateway.
+* **Revenue at Risk** — See exactly how much money failed payments are costing you today, this week, and this month — in real dollars, not percentages.
+* **Plain-English Error Messages** — "Card declined — insufficient funds," not cryptic gateway codes. Instantly understand why a payment failed without digging through logs.
+* **Full Transaction History** — Every transaction is stored and searchable. Nothing ages out.
+* **Gateway Health Monitoring** — Track your payment gateway success rate over time and spot degradation before it becomes a full outage.
+
+= Starter — Premium =
+
+* **Real-time Slack alerts** when a payment fails or a gateway goes down
+* **Real-time Telegram alerts** — get pinged the second something breaks, not after checking the dashboard
+
+= Growth — Premium =
+
+* **Automatic gateway failover** — when your primary gateway goes down, ZextaPay automatically switches checkout to your backup gateway. Customers never see the outage.
+* **Auto-restore** — switches back to your primary gateway automatically once it recovers, with no manual intervention needed.
+
+[Upgrade to Starter or Growth →](https://zextapay.com/#pricing)
 
 == Installation ==
 
-1. Upload the `zextapay-payment-monitor` folder to `/wp-content/plugins/`
+1. Search for "ZextaPay" in your WordPress admin under Plugins → Add New, or upload the `zextapay-payment-monitor` folder to `/wp-content/plugins/`
 2. Activate through the Plugins menu in WordPress
-3. Go to ZextaPay in your admin menu
-4. Your payment transactions will start appearing automatically
+3. Go to **ZextaPay** in your admin menu
+4. Your payment transactions will start appearing automatically — no configuration required
 
 == Frequently Asked Questions ==
 
 = Does this work with Stripe and PayPal? =
-Yes. ZextaPay works with Stripe, PayPal, Square, Authorize.net and any WooCommerce compatible gateway.
+
+Yes. ZextaPay works with Stripe, PayPal, Square, Authorize.net, and any WooCommerce-compatible payment gateway.
 
 = Will this slow down my checkout page? =
-No. ZextaPay runs entirely in the background. Zero impact on checkout speed.
 
-= What happens if the plugin is deactivated? =
-Your store reverts to normal instantly. Zero risk to your checkout.
+No. ZextaPay runs entirely in the background. It has zero impact on checkout speed or the customer experience.
 
 = Is my customer data safe? =
-Yes. ZextaPay only logs order IDs and amounts. No card details or personal data is ever stored.
+
+Yes. ZextaPay only logs order IDs and amounts. No card details or personal data are ever stored.
 
 = Do I need technical knowledge to set this up? =
-No. Install, activate and your transactions will start being monitored automatically.
+
+No. Install, activate, and your transactions start being monitored automatically. No API keys, no code, no configuration required.
+
+= What happens if I deactivate the plugin? =
+
+Your store reverts to normal instantly. Zero risk to your checkout.
+
+= Which payment gateways does it support? =
+
+ZextaPay works with any WooCommerce-compatible gateway. It has been tested with Stripe, PayPal, Square, and Authorize.net.
 
 == Screenshots ==
 
-1. The dashboard showing successful and failed transactions with revenue at risk.
+1. The live transaction dashboard showing successful and failed payments with revenue at risk highlighted.
 
 == Changelog ==
 
@@ -67,22 +86,20 @@ No. Install, activate and your transactions will start being monitored automatic
 
 = 1.0.0 =
 * Initial release.
-* Live dashboard with transaction monitoring.
+* Live dashboard with real-time transaction monitoring.
 * Revenue at risk tracking.
 * Full transaction history.
 
 == Upgrade Notice ==
 
 = 1.0.1 =
-Important update. Install to keep all transaction logs permanently.
+Important update — installs to keep all transaction logs permanently and improves security. Recommended for all users.
 
 == External Services ==
 
-This plugin does not connect to any external services in the free version.
+The free version does not connect to any external services. All transaction data is stored locally in your WordPress database. No data is sent to any third-party service.
 
-The free version only stores transaction data locally in your WordPress database. No data is sent to any third-party service.
-
-Premium versions (Starter and Growth) are available via Freemius and connect to Slack and Telegram for alerts.
+Premium versions (Starter and Growth) connect to Slack and/or Telegram to deliver real-time payment failure alerts. These connections are opt-in and only activated when you configure your own Slack or Telegram credentials. See the [Slack privacy policy](https://slack.com/privacy-policy) and [Telegram privacy policy](https://telegram.org/privacy).
 
 == Source Code ==
 
